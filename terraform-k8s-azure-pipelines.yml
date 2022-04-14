@@ -12,9 +12,9 @@ pool:
     - agent.name -equals SREE-PC
 
 stages:
- - stage: tf-init
+ - stage: tfinit
    jobs:
-     - job: tf-initjob
+     - job: tfinitjob
        steps:
          
         - task: TerraformTaskV2@2
