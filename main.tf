@@ -45,7 +45,7 @@ output "client_certificate" {
 }
 
 terraform {
-   backend "local" {}
+   backend "azurerm" {}
  }
 
 output "kube_config" {
