@@ -44,6 +44,10 @@ output "client_certificate" {
   value = azurerm_kubernetes_cluster.terraform_k8s.kube_config.0.client_certificate
 }
 
+terraform {
+   backend "local" {}
+ }
+
 output "kube_config" {
   value = azurerm_kubernetes_cluster.terraform_k8s.kube_config_raw
 
