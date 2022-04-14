@@ -42,6 +42,7 @@ resource "azurerm_kubernetes_cluster" "terraform_k8s" {
 
 output "client_certificate" {
   value = azurerm_kubernetes_cluster.terraform_k8s.kube_config.0.client_certificate
+   sensitive = true
 }
 
 terraform {
