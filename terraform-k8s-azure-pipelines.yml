@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+   name: selfwindowsagent
+   demands: 
+    - agent.name -equals SREE-PC
 
 stages:
  - stage: tf-init
